@@ -1,0 +1,295 @@
+/* General */
+
+:root{
+    --white: #FEFEFE;
+    --blue: #0d16c5;
+    --black: #1B1B1B;
+    --gray: #747474;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Index */
+
+.site-init{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.site-init h1{
+    font-weight: 300;
+}
+
+nav a{
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 2rem;
+    background: linear-gradient(to left, var(--blue) 50%, var(--white) 50%) right;
+    background-size: 250%;
+    transition: .25s ease-out;
+    padding: 0.2rem;
+}
+
+nav a:hover{
+    background-position: 0 150%;
+    color: var(--blue);
+}
+
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 15rem;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--gray);
+    border-radius: 2rem;
+}
+
+select{
+    width: 16.5rem;
+    padding: 10px;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border: 1px solid var(--gray);
+    border-radius: 2rem;
+    color: var(--gray);
+}
+
+option{
+    color: #000;
+}
+
+option:first-child{
+    color: var(--gray);
+}
+
+input:first-of-type{
+    margin-top: 2rem;;
+}
+
+#txtColor{
+    width: 16.5rem;
+    height: 2.5rem;
+    background-color: transparent;
+}
+
+button{
+    padding: 0.5rem 3rem;
+    background-color: var(--blue);
+    color: var(--white);
+    border: transparent;
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.login-container button{
+    margin-top: 1rem;
+}
+
+.login-error{
+    font-size: 0.8rem;
+    color: var(--white);
+    background-color: red;
+    padding: 0 1rem;
+}
+
+.not-user{
+    font-size: 0.8rem;
+    color: var(--blue);
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+    background: linear-gradient(to left, var(--white) 50%, var(--blue) 50%) right;
+    background-size: 250%;
+    transition: .35s ease-out;
+    padding: 0 1rem;
+}
+
+.not-user:hover{
+    background-position: 0 150%;
+    color: var(--white);
+}
+
+/* Register */
+
+.site-register{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.site-register h1{
+    font-weight: 300;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--blue);
+}
+
+.form-container-title{
+    margin-left: 3.5rem;
+}
+
+.form-container-inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container-one, .form-container-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3rem;
+}
+
+.container-title{
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: var(--blue);
+}
+
+.container-title i{
+    margin-right: 1rem;
+}
+
+.form-container-img{
+    background-image: url(img/registering.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 25rem;
+    height: 30rem;
+}
+
+.overlay{
+    background-color: #0d16c5b8;
+    width: 25rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container-img p{
+    padding: 0 3rem;
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.form-container-img button{
+    padding: 0.5rem 3rem;
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.form-container-img button:hover{
+    padding: 0.5rem 3rem;
+    background-color: var(--white);
+    color: var(--blue);
+    border: 1px solid var(--white);
+    border-radius: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.input-error{
+    border: 1px solid red;
+}
+
+.alert-error{
+    font-size: 0.8rem;
+    color: var(--white);
+    background-color: red;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+}
+
+.hide{
+    display: none;
+}
+
+/* Users */
+
+table{
+    width: 50%;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: var(--white);
+    color: white;
+    box-shadow: 0 0 15px 0px rgba(0,0,0,0.2);
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+th, td{
+    padding: 0.5rem;
+}
+
+th{
+    background-color: var(--blue);
+}
+
+td{
+    color: var(--blue);
+}
+
+tr:hover{
+    background-color: #f3f3f3;
+}
+
+/* Footer */
+
+footer{
+    height: 10vh;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text{
+    color: var(--blue);
+}
